@@ -1,0 +1,39 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./frontend
+    restart: "no"
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./frontend:/app
+
+  postgres:
+    image: postgres:12.11-alpine
+    env_file:
+      - .env
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+
+  redis:
+    image: redis:7.0-alpine
+    env_file:
+      - .env
+    volumes:
+      - redis-data:/data
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    command: ["rails", "server"]
+    restart: "no"
+    volumes:
+      - ./backend:/app
+    depends_on:
+      - postgres
+      - redis
+
+volumes:
+  postgres-data:
+  redis-data:
