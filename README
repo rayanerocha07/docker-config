@@ -1,3 +1,5 @@
-`docker compose up`
+`docker compose build` para instalar o necessário para iniciar;
+
+`docker compose up` para iniciar o servidor;
 
 Use CTRL + C e `docker compose down` para parar o servidor.
