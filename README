@@ -2,4 +2,4 @@
 
 `docker compose up` para iniciar o servidor;
 
-Use CTRL + C e `docker compose down` para parar o servidor.
+Use `CTRL + C` e `docker compose down` para parar o servidor.
