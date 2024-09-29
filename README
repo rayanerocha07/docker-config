@@ -3,5 +3,8 @@
 ```bash
 docker compose build      # To install dependencies needed to start
 docker compose up         # To start the server
+docker compose run backend bash # To access backend container
+bundle exec rails test    # To run tests
+
 # Use CTRL + C to stop the server
 docker compose down       # To take down the containers
