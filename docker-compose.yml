@@ -4,7 +4,7 @@ services:
     build: ./frontend
     restart: "no"
     ports:
-      - "3000:3000"
+      - "3001:3000"
     volumes:
       - ./frontend:/app
 
@@ -26,10 +26,14 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    command: ["rails", "server"]
+    command: ["rails", "server", "-b", "0.0.0.0"]
     restart: "no"
+    ports:
+      - "3000:3000"
     volumes:
       - ./backend:/app
+    env_file:
+      - .env
     depends_on:
       - postgres
       - redis
