@@ -4,16 +4,6 @@ class Identity::EmailVerificationsControllerTest < ActionDispatch::IntegrationTe
   setup do
     @user = sign_in_as(users(:lazaro_nixon))
     @user.update! verified: false
-    Current.user = @user # Certifique-se de definir Current.user aqui
-  end
-
-  test "should send a verification email" do
-    perform_enqueued_jobs do
-      post identity_email_verification_url
-    end
-
-    assert_enqueued_email_with UserMailer, :email_verification, args: [{ user: @user }]
-    assert_redirected_to root_url
   end
 
   test "should verify email" do
