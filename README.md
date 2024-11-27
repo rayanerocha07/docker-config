@@ -1,6 +1,6 @@
 # How to Run the Project
 
-This is a minimum template for setting up a project with authentication with Rails, PostgreSQL, React, and Docker in the development environment.
+This is a minimum template for setting up a project with authentication. Rails, PostgreSQL, React, and Docker in the development environment.
 
 Clone the repository:
 
