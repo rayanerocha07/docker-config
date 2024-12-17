@@ -14,12 +14,12 @@ cd docker-config
 
 1. **Build the Docker containers**:
     ```bash
-    docker compose build      # Installs dependencies needed to start
+    docker compose build # Installs dependencies needed to start
     ```
 
 2. **Start the server**:
     ```bash
-    docker compose up         # Launches the application
+    docker compose up # Launches the application
     ```
 
 3. **Access the backend container**:
@@ -34,14 +34,14 @@ cd docker-config
 
 5. **Run tests**:
     ```bash
-    bundle exec rails test    # Executes the test suite
+    bundle exec rails test # Executes the test suite
     ```
 
 6. **Stop the server**: Use `CTRL + C` to stop the server.
 
 7. **Shut down the containers**:
     ```bash
-    docker compose down       # Stops and removes the containers
+    docker compose down # Stops and removes the containers
     ```
 
 ## Ports
