@@ -1,8 +1,20 @@
-# How to Run the Project
+## How to Run the Project 🚀
 
-This is a minimum template for setting up a project with authentication. Rails, PostgreSQL, React, and Docker in the development environment.
+This repository provides a minimal template for setting up a project with Rails, PostgreSQL, React, and Docker in the development environment. It includes basic authentication to help you get started quickly.
 
-Clone the repository:
+
+## Prerequisites
+
+Ensure the following tools are installed on your machine:
+
+- Docker (https://www.docker.com)
+- Docker Compose (https://docs.docker.com/compose)
+
+## Getting Started
+
+Follow these steps to set up and run the project locally.
+
+### Clone the Repository
 
 ```bash
 
@@ -10,19 +22,20 @@ git clone git@github.com:rayanerocha07/docker-config.git
 cd docker-config
 ````
 
-## Instructions
+## Setup and Running Instructions
 
 1. **Build the Docker containers**:
     ```bash
     docker compose build # Installs dependencies needed to start
     ```
 
-2. **Start the server**:
+2. **Start the Application**:
     ```bash
     docker compose up # Launches the application
     ```
 
 3. **Access the backend container**:
+
     ```bash
     docker compose run backend bash # Opens a shell in the backend container
     ```
@@ -37,9 +50,9 @@ cd docker-config
     bundle exec rails test # Executes the test suite
     ```
 
-6. **Stop the server**: Use `CTRL + C` to stop the server.
+6. **Stop the server**: Press `CTRL + C` in the terminal to stop the running server.
 
-7. **Shut down the containers**:
+7. **Shutdown and Clean Up (stop and remove all containers)**:
     ```bash
     docker compose down # Stops and removes the containers
     ```
@@ -48,6 +61,3 @@ cd docker-config
 
 - **Backend**: [http://localhost:3000](http://localhost:3000)
 - **Frontend**: [http://localhost:3001](http://localhost:3001)
-
-
-Make sure you have Docker and Docker Compose installed on your machine before running these commands.
