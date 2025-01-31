@@ -22,14 +22,14 @@ git clone git@github.com:rayanerocha07/docker-config.git
 cd docker-config
 ````
 
-## Setup and Running Instructions
+## Setup and running instructions
 
 1. **Build the Docker containers**:
     ```bash
     docker compose build # Installs dependencies needed to start
     ```
 
-2. **Start the Application**:
+2. **Start the application**:
     ```bash
     docker compose up # Launches the application
     ```
