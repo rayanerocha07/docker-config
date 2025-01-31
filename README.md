@@ -1,4 +1,4 @@
-## How to Run the Project 🚀
+## How to Run the Project 
 
 This repository provides a minimal template for setting up a project with Rails, PostgreSQL, React, and Docker in the development environment. It includes basic authentication to help you get started quickly.
 
