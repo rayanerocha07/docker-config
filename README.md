@@ -50,7 +50,8 @@ cd docker-config
     bundle exec rails test # Executes the test suite
     ```
 
-6. **Stop the server**: Press `CTRL + C` in the terminal to stop the running server.
+6. **Stop the server**: 
+Press `CTRL + C` in the terminal to stop the running server.
 
 7. **Shutdown and Clean Up (stop and remove all containers)**:
     ```bash
